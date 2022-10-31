@@ -10,7 +10,7 @@
 <body>
     <header>
         
-        <div class="">
+        <div class="contenedor">
         
             <h1> <a href="#"> Docu <span> 100CIA </span>  </a> </h1>
             
@@ -37,33 +37,37 @@
 
     </header>
 
-    <main>
-        <p> Para que no te pierdas ningun evento </p>
-        <h1>Calendario Astronómico 2022</h1>
-        <iframe allowtransparency="yes" scrolling="no" style="border: none; width:860px; height:759px; overflow: hidden;" src="https://in-the-sky.org/widgets/newscal.php?skin=1"></iframe>
-        <img src="/img/nebulosa.jpg" width="400">
-        <p> <a href=""></a> </p>
-    </main>
+    <div>
+        <main>
+            <p> Para que no te pierdas ningun evento </p>
+            <h1 class="tit-calendar" >Calendario Astronómico 2022</h1>
+            <div class="contenedor">
+
+                <iframe allowtransparency="yes" scrolling="no" style="border: none; width:860px; height:759px; overflow: hidden;" src="https://in-the-sky.org/widgets/newscal.php?skin=1"></iframe>
+            </div>
+            
+        </main>
+    </div>
     
-    <aside>
-       
-        <h2>Contanos que evento te gustaría observar</h2>
+    <aside id="comentarios-aside">
+        <div class="contenedor">
+            <h2>Contanos que evento te gustaría observar</h2>
 
-        <form action="">
-            
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name">
-            
-            <label for="message">Mensaje</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <form action="">
+                
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
 
-            <input type="submit" value="Enviar mensaje">
+                <input type="submit" value="Enviar mensaje">
 
-        </form>
+            </form>
 
-        <h2>..y de paso chusmeá la luna ;)</h2>
-        <iframe src="https://solarsystem.nasa.gov/gltf_embed/2366" frameborder="0" width="400" height="500" ></iframe>
-
+            <h2>..y de paso chusmeá la luna ;)</h2>
+            <iframe class="calendario-cuadrado" src="https://solarsystem.nasa.gov/gltf_embed/2366" frameborder="0" width="400" height="500" ></iframe>
+        </div>
     </aside>
 
     <footer>
